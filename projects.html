@@ -1,0 +1,115 @@
+﻿
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+	<!-- Meta Data -->
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Sodabe Bandali">
+	<meta name="description" content="Personal website for Sodabe Bandali, a Ph.D. student in Computer Science at Vanderbilt University focused on VR, AR, and AI.">
+	<!-- Icon Handles -->
+	<link rel="icon" type="image/svg+xml" href="img/icon/sb-logo.svg"> 
+	<link rel="icon shortcut" type="image/png" href="img/icon/favicon-32x32.png"> <!-- for legacy broswers -->
+	<link rel="apple-touch-icon" type="image/png" href="img/icon/favicon-180x180.png">
+	<!-- Custom Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&display=swap" rel="stylesheet">
+	<!-- Style Sheets -->
+	<link rel="stylesheet" href="stylesheet.css">
+	<!-- Title  	 -->
+	<title>Sodabe Bandali - Projects</title>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EMSR0RN00Y"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-EMSR0RN00Y');
+</script>
+	
+<body> 
+	<!-- Navigation Bar  -->
+    <nav>
+		<div class="navname"><p><span class="logo-mark">SB</span> Sodabe Bandali</p></div>		
+		<ul>
+			<li><a href="index.html">About</a></li>
+            <li><a href="index.html#news">News</a></li>
+            <li><a href="projects.html">Projects</a></li>
+			<li><a href="blog.html">Blog</a></li>
+		</ul>				
+	</nav>
+	
+	<main>		
+
+    <!-- Profile Section (Image, Name, Contact Info, Links) -->
+    <div class = "profile", role="profile">
+		<img src="img/Sodabe.jpg.png" alt="A headshot of Sodabe Bandali, the creator of the website. She has long brown hair and a big grin">	
+        <h2>Sodabe Bandali</h2>
+        <p>Computer Science <br>
+            Vanderbilt University <br>  
+            sodabebandali02@gmail.com</p>
+        <ul>
+            <li><a href="docs/Adams_CV_December_2024.pdf"><img src="img/icon_cv.png" alt="Curriculum vitae PDF icon"></a></li>
+            <li><a href="https://www.linkedin.com/in/sodabe-b-07404b168/"><img src="img/icon_linkedin.png" alt="LinkedIn icon. "></a></li>
+            <li><a href="https://github.com/sodabe622"><img src="img/icon_github.png" alt="GitHub icon. "></a></li>
+            <li><a href="https://scholar.google.com/citations?user=Rj3T94gAAAAJ&hl=en"><img src="img/icon_gscholar.png" alt="Google Scholar icon. "></a></li>
+        </ul>			
+    </div>  <!-- end profile section -->
+
+    <section>
+		<h1>Projects</h1>
+		<p>Selected research and applied projects in immersive technologies, perception, and accessibility.</p>
+    </section>
+
+    <section>
+		<h2>Selected Projects</h2>
+		<div class="projects-grid">
+			<article class="project-card project-treadmill">
+				<img src="img/projects/treadmill-vr.png" alt="Participant using an omnidirectional treadmill in a virtual reality experiment." data-fallback-jpg="img/projects/treadmill-vr.jpg" data-fallback-final="img/Sodabe.jpg.png" onerror="if(this.dataset.fallbackJpg){this.src=this.dataset.fallbackJpg;this.dataset.fallbackJpg='';}else{this.onerror=null;this.src=this.dataset.fallbackFinal;}">
+				<div class="project-body">
+					<h3>Locomotion and Distance Perception on Omnidirectional Treadmills</h3>
+					<p>Investigating how locomotion parameters affect spatial perception in immersive virtual environments using the Cyberith Virtualizer Elite 2 treadmill.</p>
+					<p class="project-tags">Unity | C# | Virtual Reality | Cyberith Virtualizer Elite 2</p>
+				</div>
+			</article>
+
+			<article class="project-card project-breathing">
+				<img src="img/projects/breathing-radiation.png" alt="Hardware setup used for breathing training research with mobile and VR devices." data-fallback-jpg="img/projects/breathing-radiation.jpg" data-fallback-final="img/Archived/power_round.png" onerror="if(this.dataset.fallbackJpg){this.src=this.dataset.fallbackJpg;this.dataset.fallbackJpg='';}else{this.onerror=null;this.src=this.dataset.fallbackFinal;}">
+				<div class="project-body">
+					<h3>Breathing Training System for Radiation Therapy (Vanderbilt University)</h3>
+					<p>Developed a VR breathing training system to support patients preparing for radiation therapy by integrating physiological sensing and immersive feedback.</p>
+					<p class="project-tags">Unity | C# | Meta Quest | Bluetooth Sensors</p>
+				</div>
+			</article>
+
+			<article class="project-card project-hololens">
+				<img src="img/projects/hololens-navigation.png" alt="Augmented reality hallway scene used for spatial navigation and distance judgment experiments." data-fallback-jpg="img/projects/hololens-navigation.jpg" data-fallback-final="img/Archived/vdf2.PNG" onerror="if(this.dataset.fallbackJpg){this.src=this.dataset.fallbackJpg;this.dataset.fallbackJpg='';}else{this.onerror=null;this.src=this.dataset.fallbackFinal;}">
+				<div class="project-body">
+					<h3>Spatial Navigation in Augmented Reality with HoloLens</h3>
+					<p>Studying how environmental clutter influences spatial navigation and distance perception in augmented reality using Microsoft HoloLens.</p>
+					<p class="project-tags">Unity | C# | Microsoft HoloLens | AR Spatial Mapping</p>
+				</div>
+			</article>
+
+			<article class="project-card project-cues">
+				<img src="img/projects/virtual-cues.png" alt="Virtual city scene with guidance overlays used to evaluate safe pedestrian navigation." data-fallback-jpg="img/projects/virtual-cues.jpg" data-fallback-final="img/Archived/vdf3.PNG" onerror="if(this.dataset.fallbackJpg){this.src=this.dataset.fallbackJpg;this.dataset.fallbackJpg='';}else{this.onerror=null;this.src=this.dataset.fallbackFinal;}">
+				<div class="project-body">
+					<h3>Guiding Safe Pedestrian Navigation with Virtual Cues</h3>
+					<p>Explores how virtual cues can improve safe pedestrian decisions in complex virtual street environments.</p>
+					<p class="project-tags">Unity | C# | AR Spatial Mapping | Human-Computer Interaction</p>
+				</div>
+			</article>
+		</div>
+	</section>
+
+	</main>
+	
+</body>
+</html>
+
+
+
