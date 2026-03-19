@@ -56,7 +56,7 @@
 			<li><a href="docs/Adams_CV_May_2025.pdf"><img src="img/icon_cv.png" alt="Curriculum vitae PDF icon"></a></li>
 			<li><a href="https://www.linkedin.com/in/sodabe-b-07404b168/"><img src="img/icon_linkedin.png" alt="LinkedIn icon. "></a></li>
 			<li><a href="https://github.com/sodabe622"><img src="img/icon_github.png" alt="GitHub icon. "></a></li>
-			<li><a href="https://scholar.google.com/citations?user=Rj3T94gAAAAJ&hl=en"><img src="img/icon_gscholar.png" alt="Google Scholar icon. "></a></li>
+			<li><a href="https://www.linkedin.com/in/sodabe-b-07404b168"><img src="img/icon_gscholar.png" alt="Google Scholar icon. "></a></li>
 		</ul>			
 	</div>  <!-- Profile -->	 
 
@@ -128,6 +128,38 @@
 	<!-- Include HTMLs JS Script -->
 	<!-- <script src="IncludeHTML.js"> </script>  -->
 	<!-- <script> includeHTML(); </script>  -->
+	<script>
+	(function () {
+		var navOffset = 90;
+
+		function scrollToSection(hash) {
+			if (!hash || hash.charAt(0) !== '#') {
+				return;
+			}
+			var target = document.getElementById(hash.slice(1));
+			if (!target) {
+				return;
+			}
+			var top = target.getBoundingClientRect().top + window.pageYOffset - navOffset;
+			window.scrollTo({ top: top, behavior: 'smooth' });
+		}
+
+		document.querySelectorAll('nav a[href^="#"]').forEach(function (link) {
+			link.addEventListener('click', function (event) {
+				event.preventDefault();
+				var hash = link.getAttribute('href');
+				history.replaceState(null, '', hash);
+				scrollToSection(hash);
+			});
+		});
+
+		if (window.location.hash) {
+			setTimeout(function () {
+				scrollToSection(window.location.hash);
+			}, 50);
+		}
+	})();
+	</script>
 
 </body>
 
