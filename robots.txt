@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sodabe622.github.io/sitemap.xml
