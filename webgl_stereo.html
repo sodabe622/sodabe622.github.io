@@ -86,14 +86,14 @@
                 // Scene Setup
 				scene = new THREE.Scene();
 				scene.background = new THREE.CubeTextureLoader()
-					.setPath( 'https://sodabe622.github.io/textures/' )
+					.setPath( 'https://sodabebandali.me/textures/' )
 					.load( [ 'thefog_rt.jpg', 'thefog_lf.jpg', 'thefog_up.jpg', 'thefog_dn.jpg', 'thefog_bk.jpg', 'thefog_ft.jpg' ] );
 					//.load( [ 'px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz.jpg' ] );
 				var geometry = new THREE.SphereBufferGeometry( 100, 32, 16 );
 
                 // For Refraction of Bubbles
 				var textureCube = new THREE.CubeTextureLoader()
-					.setPath( 'https://sodabe622.github.io/textures/' )
+					.setPath( 'https://sodabebandali.me/textures/' )
 					.load( [ 'thefog_rt.jpg', 'thefog_lf.jpg', 'thefog_up.jpg', 'thefog_dn.jpg', 'thefog_bk.jpg', 'thefog_ft.jpg' ] );
 					//.load( [ 'px.jpg', 'nx.jpg', 'py.jpg', 'ny.jpg', 'pz.jpg', 'nz.jpg' ] );
 				textureCube.mapping = THREE.CubeRefractionMapping;
